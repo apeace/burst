@@ -11,7 +11,7 @@
   "scripts": {
   },
   "bin": {
-    "burst": "./bin/burst"
+    "burst": "./bin/burst.js"
   },
   "engines": { "node": ">= 0.4.1" },
   "author": "Andrew Peace <apeace@gmail.com> (http://github.com/apeace)",
