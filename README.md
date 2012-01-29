@@ -30,7 +30,7 @@ $ burst as cam
 ## Setup
 
 You need a Redis server to use Burst. IPs are exchanged through pub-sub and
-files are sent via sockets. No other configuration is necessary--just a
+files are sent via sockets. No other configuration is necessary&mdash;just a
 vanilla Redis server.
 
 If you don't have a Redis server in the office already, you're probably not
@@ -49,6 +49,6 @@ burst on 4567
 burst as andrew
 
 # send a file to the given name
-bust to andrew ./path/to/file
+burst to andrew ./path/to/file
 ````
 
