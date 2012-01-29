@@ -52,3 +52,57 @@ burst as andrew
 burst to andrew ./path/to/file
 ````
 
+## Magic Ponies
+
+Let me tell you a story.
+
+Once upon a time, the boss said he was going to send an important SQL dump
+to everyone in the office. Gregg and Nancy wanted to see the file. So Gregg
+hopped on his Macbook Air and Nancy grabbed her Ubuntu netbook, and they
+both fired up the terminal:
+
+````bash
+$ burst as everyone
+
+````
+
+Gregg quickly pounded into iTerm. Nancy followed suit in her GNOME-Terminal:
+
+````bash
+$ burst as everyone
+
+````
+
+And they waited.
+
+The clock struck 2:15 and, right on queue, the boss returned from his lunch
+break. He wrote into his own terminal:
+
+````bash
+$ burst to everyone /var/www/pony_identities.sql
+````
+
+And like pony magic, our heros' terminals burst to life! They began to
+download the important file:
+
+````bash
+$ burst as everyone
+[===>      ] 0.2/1.9mb (10%) pony_identities.sql
+````
+
+As soon as the magical progress bar showed 100%, Gregg and Nancy `^C`ed and
+began using their favorite command-line tools to parse their new files.
+
+Meanwhile, the boss was waiting for the rest of the office to get the file:
+
+````bash
+$ burst to everyone /var/www/pony_identities.sql
+[====>     ] 3/10 (30%)
+````
+
+When *his* magical progress bar showed 100%, *he `^C`ed too*, and went back
+to his work.
+
+And so, there really was no moon landing.
+
+
