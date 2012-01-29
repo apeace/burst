@@ -1,6 +1,6 @@
 # Burst
 
-Simple command-line file sharing for developers sharing the same network.
+Simple command-line file sharing for developers on the same network.
 
 ## Install
 
