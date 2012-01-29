@@ -1,0 +1,30 @@
+{
+  "name": "burst",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "dependencies": {
+    "optimist": "0.3.1",
+    "redis": "0.7.1"
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+  },
+  "bin": {
+    "burst": "./bin/burst"
+  },
+  "engines": { "node": ">= 0.4.1" },
+  "author": "Andrew Peace <apeace@gmail.com> (http://github.com/apeace)",
+  "description": "A command-line file sharing tool",
+  "homepage": "https://github.com/apeace/burst",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/apeace/burst.git"
+  },
+  "main": "./lib/burst",
+  "licenses" :
+    [{
+      "type" : "MIT",
+      "url" : "http://raw.github.com/apeace/burst/master/LICENSE"
+    }]
+}
