@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var argv = require('optimist').argv._;
 var burst = require('../lib/burst');
 var config = require('../lib/config');
