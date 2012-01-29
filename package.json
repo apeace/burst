@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "dependencies": {
     "optimist": "0.3.1",
-    "redis": "0.7.1"
+    "redis": "0.7.1",
+    "colors": "*"
   },
   "devDependencies": {
   },
