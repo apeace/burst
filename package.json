@@ -1,11 +1,11 @@
 {
   "name": "burst",
   "preferGlobal": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "dependencies": {
     "optimist": "0.3.1",
     "redis": "0.7.1",
-    "colors": "*"
+    "colors": "0.6.x"
   },
   "devDependencies": {
   },
