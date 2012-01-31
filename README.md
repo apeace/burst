@@ -45,6 +45,9 @@ burst into 10.0.0.123:6379
 # transfer files on the given port
 burst on 4567
 
+# let the OS find an open port to transfer on
+burst on random
+
 # accept files sent to the given name
 burst as andrew
 
