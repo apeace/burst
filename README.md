@@ -27,6 +27,13 @@ $ burst as cam
 ^C
 ```
 
+Next time around, there is no need to use `burst into`, because it's saved
+in a config file.
+
+````bash
+$ burst to cam ./important_file.txt
+````
+
 ## Setup
 
 You need a Redis server to use Burst. IPs are exchanged through pub-sub and
