@@ -1,3 +1,9 @@
+0.0.3 / 2012-01-30
+==================
+
+ * Added "burst on" command (issue #2)
+ * Added indicator when transfering file (issue #5)
+
 0.0.2 / 2012-01-29
 ==================
 
