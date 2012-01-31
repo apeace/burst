@@ -6,6 +6,20 @@ var config = require('../lib/config');
 var log = require('../lib/log');
 var colors = require('colors');
 
+function save_to_config (options) {
+  config.get(function (err, conf) {
+    if (err) throw new Error(err);
+    for (var i in options) {
+      if (options.hasOwnProperty(i)) {
+        conf[i] = options[i];
+      }
+    }
+    config.save(conf, function (err) {
+      if (err) throw new Error(err);
+    });
+  });
+}
+
 if (!module.parent) {
   config.get(function (err, options) {
     if (err) throw new Error(err);
@@ -17,18 +31,29 @@ if (!module.parent) {
         break;
 
       case 'to':
-        burst.to(options.redis, argv[1], argv[2]);
+        burst.to(options.redis, argv[1], argv[2], options.port);
         break;
 
       case 'into':
+        var redis;
         if (typeof(argv[1]) === 'number') {
-          options.redis = {host: '127.0.0.1', port: argv[1]};
+          redis = {host: '127.0.0.1', port: argv[1]};
         } else {
           var pieces = argv[1].split(':');
-          options.redis = {host: pieces[0], port: pieces[1]||6379};
+          redis = {host: pieces[0], port: pieces[1]||6379};
         }
-        config.save(options, function () {});
+        save_to_config({redis: redis});
         break;
+
+     case 'on':
+       var port = argv[1];
+       if (port === 'random') {
+         port = null;
+       } else {
+         port = Number(port);
+       }
+       save_to_config({port: port});
+       break;
 
       default:
         log('burst');
