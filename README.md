@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/apeace/burst.png)](http://travis-ci.org/apeace/burst)
 # Burst
 
 Simple command-line file sharing for developers on the same network.
